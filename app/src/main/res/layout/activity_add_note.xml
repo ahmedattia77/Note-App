@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_style"
+    tools:context=".add_note"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addNote_add_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/my_style3"
+        android:text="add" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addNote_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textColorHint="@color/my_style2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/addNote_add_ib"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addNote_title_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addNote_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="description"
+        app:hintAnimationEnabled="true"
+        android:textColorHint="@color/my_style2"
+        android:layout_below="@+id/addNote_title"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addNote_content_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:cursorVisible="true"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@color/my_style3"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</RelativeLayout>
